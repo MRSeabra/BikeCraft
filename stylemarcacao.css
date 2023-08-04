@@ -5,7 +5,7 @@
   --fundo2: #fff;
   --texto: #000;
   --subtitulo: rgba(0, 0, 0, 0.2);
-  --onda: url("/img/onda-clara.svg");
+  --onda: url("img/onda-clara.svg");
   --botao: #000;
 }
 
@@ -15,7 +15,7 @@
     --fundo2: #000;
     --texto: #fff;
     --subtitulo: rgba(255, 255, 255, 0.2);
-    --onda: url("/img/onda-escura.svg");
+    --onda: url("img/onda-escura.svg");
     --botao: #fff;
   }
 }
