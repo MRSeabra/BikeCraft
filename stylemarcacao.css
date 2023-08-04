@@ -1,0 +1,208 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f7f7;
+  display: grid;
+  justify-items: center;
+  gap: 60px;
+  margin: 0;
+  margin-top: 60px;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.3rem;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.menu li {
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+nav li:hover {
+  border: 2px solid #e21;
+}
+
+ul a {
+  text-decoration: none;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  display: block;
+  color: #000;
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h3 {
+  margin: 0;
+}
+
+/* .logo {
+  align-items: center;
+} */
+
+.header {
+  display: grid;
+  justify-items: center;
+  gap: 60px;
+}
+
+.conteudo {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+
+.introducao-cover img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.bloco-1 h1 {
+  font-size: 2rem;
+}
+.bloco-1 {
+  background-color: #fff;
+  text-align: right;
+  /* position: relative; para fazer o detalhe */
+  padding: 40px;
+  align-content: center;
+  justify-items: center;
+}
+
+.botao {
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #e21;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.botao:hover {
+  background: #900;
+}
+
+/* .bloco-2 {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  background: #fff;
+  padding: 40px;
+} */
+
+.subtitulo {
+  font-size: 4rem;
+  color: rgba(0, 0, 0, 0.2);
+  text-align: right;
+  padding-right: 40px;
+  text-transform: uppercase;
+  align-self: center;
+  background-image: url("/Origamid/html e css iniciante/05-css-propriedades/0506-refatorar-exercicio/web-final/img/onda.svg");
+  /* word-break: break-all; */
+}
+
+.vantagens {
+  list-style: none;
+  background: #fff;
+  margin: 0;
+  padding: 40px;
+}
+.vantagens-itens {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+  border-left: 4px solid transparent;
+}
+
+.vantagens-itens p {
+  grid-column: 2;
+}
+
+.vantagens li:hover {
+  border-left: 4px solid #e21;
+}
+
+.vantagens li:nth-child(odd) {
+  background: #f7f7f7;
+  padding: 20px;
+}
+
+.rodape {
+  display: block;
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.conteudo.detalhe::before {
+  /* detalhe */
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #e21;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 25px;
+}
+
+@media (max-width: 1000px) {
+  .conteudo-vantagens {
+    grid-template-columns: 1fr;
+  }
+
+  .subtitulo {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    gap: 30px;
+    margin-top: 20px;
+  }
+
+  .header {
+    gap: 15px;
+  }
+
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
+
+  .bloco-1 {
+    text-align: left;
+    justify-items: start;
+  }
+
+  .conteudo.detalhe::before {
+    display: none;
+  }
+
+  .subtitulo {
+    font-size: rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .subtitulo {
+    font-size: 2rem;
+  }
+}
